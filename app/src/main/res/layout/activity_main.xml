@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the feedback details to send to the developer:"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+         />
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="dangdinhsi"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:padding="10dp"
+        />
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="siddd00474@fpt.edu.vn"
+        android:inputType="textEmailAddress"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        />
+    <EditText
+        android:id="@+id/edMessage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="top"
+        android:hint="I love this....."
+        android:textColor="@color/black"
+        android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="10dp"
+        />
+    <CheckBox
+        android:id="@+id/ck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Would you like an email response?"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/btSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
+        android:textColor="@color/black"
+        android:text="Send FeedBack"
+        />
+
+</LinearLayout>
